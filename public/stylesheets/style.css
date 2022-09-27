@@ -1,0 +1,534 @@
+@import url('./bootstrap.min.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --dark-blue: #022C40;
+    --text-blue: #105264;
+    --light-blue: #1C7585;
+    --custom-white: #EDECEC;
+    --green: #46D39A;
+
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--dark-blue);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: var(--green);
+}
+
+body {
+    background-color: var(--dark-blue);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden !important;
+}
+
+nav {
+    background-color: var(--dark-blue);
+}
+
+.ls {
+    letter-spacing: 2px;
+}
+
+.text-blue {
+    color: var(--text-blue);
+}
+
+.text-light-blue {
+    color: var(--light-blue);
+}
+
+.text-green {
+    color: var(--green);
+}
+
+.bg-mauro {
+    background-image: url("https://landing-vendas.s3.amazonaws.com/bg-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: invisible 1s;
+}
+
+.bg-header>.container {
+    animation: invisible 5s;
+}
+
+.bg-iphone {
+    background-image: url("https://landing-vendas.s3.amazonaws.com/iphone.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-dark-blue {
+    
+}
+
+.bg-city {
+    background-image: url("https://landing-vendas.s3.amazonaws.com/city.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-blue {
+    background-color: var(--light-blue);
+}
+
+
+.bg-green {
+    background-color: var(--green);
+}
+
+.bg-onevalue {
+    background-color: var(--custom-white);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.bg-onevalue::before {
+    content: '';
+    background-image: url("https://landing-vendas.s3.amazonaws.com/landing-fria/icons/arrow_down.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+}
+
+.bg-onevalue::after {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%) rotateZ(45deg);
+    background-color: var(--dark-blue);
+    width: 70px;
+    height: 70px;
+}
+
+.bg-satisfaction {
+    background-color: var(--custom-white);
+}
+
+.bg-satisfaction::before {
+    content: '';
+    background-image: url("https://landing-vendas.s3.amazonaws.com/landing-fria/icons/arrow_down.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+}
+
+.bg-satisfaction::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%) rotateZ(45deg);
+    background-color: var(--dark-blue);
+    width: 40px;
+    height: 40px;
+}
+
+.bg-module::before {
+    content: '';
+    background-image: url("https://landing-vendas.s3.amazonaws.com/landing-fria/icons/arrow_down_blue.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+}
+
+.bg-module::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%) rotateZ(45deg);
+    background-color: var(--custom-white);
+    width: 40px;
+    height: 40px;
+}
+
+.bg-faq {
+    background-image: url("https://landing-vendas.s3.amazonaws.com/landing-fria/questions.png");
+    background-repeat: no-repeat;
+    background-position-x: 75%;
+    background-size: auto;
+}
+
+.bg-app {
+    background-image: url("https://landing-vendas.s3.amazonaws.com/landing-fria/APP-WALKR.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-modules:nth-child(1) {
+    border-radius: 50px !important;
+    max-width: 400px;
+    height: 600px;
+    background: url("https://landing-vendas.s3.amazonaws.com/landing-fria/module1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-modules:nth-child(2) {
+    border-radius: 50px !important;
+    max-width: 400px;
+    height: 600px;
+    background: url("https://landing-vendas.s3.amazonaws.com/landing-fria/module2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-modules:nth-child(3) {
+    border-radius: 50px !important;
+    max-width: 400px;
+    height: 600px;
+    background: url("https://landing-vendas.s3.amazonaws.com/landing-fria/module3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-modules:nth-child(4) {
+    border-radius: 50px !important;
+    max-width: 400px;
+    height: 600px;
+    background: url("https://landing-vendas.s3.amazonaws.com/landing-fria/module4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-rocket2 {
+    background-color: var(--custom-white) ;
+    background-image: url("https://landing-vendas.s3.amazonaws.com/landing-fria/rocket2.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 70% ;
+    background-size: 40%;
+}
+
+.bg-rocket2::before {
+    content: '';
+    background-image: url("https://landing-vendas.s3.amazonaws.com/landing-fria/icons/arrow_down.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+}
+
+.bg-rocket2::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%) rotateZ(45deg);
+    background-color: var(--dark-blue);
+    width: 40px;
+    height: 40px;
+}
+
+.bg-rocket1 {
+    background-image: url("https://landing-vendas.s3.amazonaws.com/landing-fria/rocket1.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 30%;
+}
+
+.bg-rocket1::before {
+    content: '';
+    background-image: url("https://landing-vendas.s3.amazonaws.com/landing-fria/icons/arrow_down_blue.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+}
+
+.bg-rocket1::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%) rotateZ(45deg);
+    background-color: var(--custom-white);
+    width: 40px;
+    height: 40px;
+}
+
+.btn-green {
+    background-color: var(--green);
+    box-shadow: 1px 1px 5px 0 rgba(255, 255, 255, 0.8),
+        -1px -1px 5px 0 rgba(255, 255, 255, 0.8);
+}
+
+.cards{
+    height: 180px;
+}
+
+.rounded-st-be {
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.w-390 {
+    width: 390px;
+}
+
+.w-370 {
+    width: 390px;
+}
+
+.h-200 {
+    height: 200px;
+}
+
+.border-green {
+    border: 4px solid var(--green);
+}
+
+.border-shadow-green {
+    width: 100%;
+    height: 4px;
+    background-color: var(--green);
+    box-shadow: 5px 5px 20px 2px var(--green),
+        -5px -5px 20px 2px var(--green);
+}
+
+.pill-bottom {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.pill-top {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.bg-ny {
+    background-image: url("https://landing-vendas.s3.amazonaws.com/ny.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-ny::before {
+    content: '';
+    background-image: url("https://landing-vendas.s3.amazonaws.com/landing-fria/icons/arrow_down_blue.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+}
+
+.bg-ny::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%) rotateZ(45deg);
+    background-color: var(--custom-white);
+    width: 40px;
+    height: 40px;
+}
+
+.bg-feedback {
+    background-color: var(--custom-white);
+}
+
+.fs-30 {
+    font-size: 90px;
+}
+
+.btn-faq:hover,
+.btn-faq:focus {
+    color: var(--green) !important;
+}
+
+.mobile {
+    display: none !important;
+}
+
+.mobile-img {
+    cursor: pointer;
+}
+
+.module-1,
+.module-2,
+.module-3 {
+    animation-duration: 1.5s;
+    animation-name: invisible;
+}
+
+.reveal {
+    transform: translateX(100px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.slidein {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.mw-350 {
+    max-width: 350px !important;
+}
+
+.mt-m50 {
+    margin-top: -50px !important;
+}
+
+.mw-600 {
+    max-width: 600px !important;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.module {
+    cursor: pointer;
+}
+
+.faq-res {
+    overflow: hidden;
+    animation: .8s increase-height forwards;
+    height: 0;
+}
+
+.header-fixed {
+    z-index: 100 !important;
+}
+
+@keyframes increase-height {
+
+    100% {
+        height: fit-content;
+    }
+}
+
+@keyframes invisible {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .mt-m50 {
+        margin-top: 0 !important;
+    }
+
+    .bg-faq {
+        background: none !important;
+    }
+
+    .module-1,
+    .module-2,
+    .module-3 {
+        display: none !important;
+    }
+
+    .desktop-img {
+        display: none !important;
+    }
+
+    .mobile {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .resumo-pratico {
+        font-size: 26px !important;
+    }
+
+    .bg-iphone {
+        margin-top: -130px !important;
+    }
+
+    .module {
+        max-height: 80px;
+    }
+
+    .onevalue2 {
+        margin-top: -20px !important;
+    }
+
+    .faq-title {
+        margin-left: 10px;
+    }
+
+    .faq-subtitle {
+        font-size: 20px !important;
+    }
+
+    .text-list>span {
+        font-size: 16px !important;
+    }
+
+    ul {
+        padding: 0 !important;
+    }
+
+    .faq {
+        text-align: start !important;
+    }
+}

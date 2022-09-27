@@ -1,0 +1,142 @@
+<section class="container-fluid text-white pt-5 pb-5 mt-5 bg-faq">
+    <h2 class="display-5 text-center faq faq-title fw-bold">FAQ</h2>
+
+    <div class="row">
+        <div class="col-md-8 d-flex justify-content-center">
+            <div class="d-block">
+                <ul class="fs-4  text-start faq">
+                    <li class="bg-transparent mt-5 text-white">
+                        <div class="d-flex align-items-center">
+                            <button onclick="showFaq(1)" class="btn btn-white text-white fs-2  border-0">
+                                <span>+</span>
+                            </button>
+                            <span class="ms-2 faq-subtitle">
+                                Existe um prazo para devolução do dinheiro?
+                            </span>
+                        </div>
+                        <div class="ms-5 d-none text-list fst-italic mw-600 mt-4 faq-res" id="btn-faq-1">
+                            <span class="fs-5 fw-normal">Temos o período de 7 dias para sua devolução, mas temos certeza que vai
+                                ser um investimento do qual você não vai se arrepender.
+                            </span>
+                        </div>
+                    </li>
+                    <li class="bg-transparent mt-2 text-white">
+                        <div class="d-flex align-items-center">
+                            <button onclick="showFaq(2)" class="btn btn-faq text-white fs-2  border-0">
+                                <span>+</span>
+                            </button>
+                            <span class="ms-2 faq-subtitle">
+                                Quantos módulos o curso possuirá?
+                            </span>
+                        </div>
+                        <div class="ms-5 d-none text-list fst-italic mw-600 mt-4 faq-res" id="btn-faq-2">
+                            <span class="fs-5 fw-normal">
+                                São 3 módulos com mais de 10 aulas.
+                            </span>
+                        </div>
+                    </li>
+                    <li class="bg-transparent mt-2 text-white">
+                        <div class="d-flex align-items-center">
+                            <button onclick="showFaq(3)" class="btn btn-faq text-white fs-2  border-0">
+                                <span>+</span>
+                            </button>
+                            <span class="ms-2 faq-subtitle">
+                                Vou ter uma equipe de suporte do curso?
+                            </span>
+                        </div>
+                        <div class="ms-5 d-none text-list fst-italic mw-600 mt-4 faq-res" id="btn-faq-3">
+                            <span class="fs-5 fw-normal">
+                                Sim! Teremos um grupo exclusivo para alunos tirarem suas dúvidas.
+                            </span>
+                        </div>
+                    </li>
+                    <li class="bg-transparent mt-2 text-white">
+                        <div class="d-flex align-items-center">
+                            <button onclick="showFaq(4)" class="btn btn-faq text-white fs-2  border-0">
+                                <span>+</span>
+                            </button>
+                            <span class="ms-2 faq-subtitle">
+                                Quais formas de pagamento são aceitas?
+                            </span>
+                        </div>
+                        <div class="ms-5 d-none text-list fst-italic mw-600 mt-4 faq-res" id="btn-faq-4">
+                            <span class="fs-5 fw-normal">
+                                Cartão de crédito, Pix e/ou boleto bancário.
+                            </span>
+                        </div>
+                    </li>
+                    <li class="bg-transparent mt-2 text-white">
+                        <div class="d-flex align-items-center">
+                            <button onclick="showFaq(5)" class="btn btn-faq text-white fs-2  border-0">
+                                <span>+</span>
+                            </button>
+                            <span class="ms-2 faq-subtitle">
+                                O curso possui atualizações?
+                            </span>
+                        </div>
+                        <div class="ms-5 d-none text-list fst-italic mw-600 mt-4 faq-res" id="btn-faq-5">
+                            <span class="fs-5 fw-normal">
+                                Sim, periodicamente teremos atualizações.
+                            </span>
+                        </div>
+                    </li>
+                    <li class="bg-transparent mt-2 text-white">
+                        <div class="d-flex align-items-center">
+                            <button onclick="showFaq(6)" class="btn btn-faq text-white fs-2  border-0">
+                                <span>+</span>
+                            </button>
+                            <span class="ms-2 faq-subtitle">
+                                Por quanto tempo vou ter acesso ao curso?
+                            </span>
+                        </div>
+                        <div class="ms-5 d-none text-list fst-italic mw-600 mt-4 faq-res" id="btn-faq-6">
+                            <span class="fs-5 fw-normal">
+                                Tempo indeterminado.
+                            </span>
+                        </div>
+                    </li>
+                    <li class="bg-transparent mt-2 text-white">
+                        <div class="d-flex align-items-center">
+                            <button onclick="showFaq(7)" class="btn btn-faq text-white fs-2  border-0">
+                                <span>+</span>
+                            </button>
+                            <span class="ms-2 faq-subtitle">
+                                Como eu vou receber o meu acesso?
+                            </span>
+                        </div>
+                        <div class="ms-5 d-none text-list fst-italic mw-600 mt-4 faq-res" id="btn-faq-7">
+                            <span class="fs-5 fw-normal">Você recebe por e-mail o link para acessar o seu material imediatamente
+                                após a confirmação do pagamento.
+                            </span>
+                        </div>
+                    </li>
+                    <li class="bg-transparent mt-2 text-white">
+                        <div class="d-flex align-items-center">
+                            <button onclick="showFaq(8)" class="btn btn-faq text-white fs-2  border-0">
+                                <span>+</span>
+                            </button>
+                            <span class="ms-2 faq-subtitle">
+                                Quanto tempo demora para receber o acesso do Curso?
+                            </span>
+                        </div>
+                        <div class="ms-5 d-none text-list fst-italic mw-600 mt-4 faq-res" id="btn-faq-8">
+                            <span class="fs-5 fw-normal">Nos pagamentos efetuados com Cartão de Crédito ou Pix, a confirmação e
+                                o envio do material é instantâneo. Você recebe na hora!
+        
+                                Nos pagamentos efetuados via boleto bancário, a confirmação e o envio do material acontece em 1
+                                dia útil após o pagamento do boleto. Significa que se você pagar o boleto hoje, vai receber o
+                                material amanhã, ou no próximo dia útil.
+        
+                                Porém se preferir, você pode enviar por whatsapp o comprovante do pagamento do boleto, para
+                                receber o material e os links no mesmo dia.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4 ">
+        </div>
+    </div>
+    
+
+</section>
