@@ -478,6 +478,13 @@ nav {
     left: 0;
 }
 
+.mw-400 {
+    max-width: 400px;
+}
+.mw-800 {
+    max-width: 800px;
+}
+
 @keyframes increase-height {
 
     100% {
@@ -515,6 +522,29 @@ nav {
 }
 
 @media (max-width: 500px) {
+
+    .title-mobile {
+        font-size: 25px !important;
+    }
+
+    .subtitle-mobile {
+        font-size: 18px !important;
+    }
+
+    .img-mobile {
+        max-width: 90%  !important;
+        max-height: 400px !important;
+    }
+    .img-access-mobile {
+        max-width: 100px  !important;
+        max-height: 400px !important;
+        margin-bottom: 20px;
+    }
+
+    nav a {
+        letter-spacing: 0 !important;
+        padding: 0 !important;
+    }
 
     .text-sm-center {
         text-align: center !important;
