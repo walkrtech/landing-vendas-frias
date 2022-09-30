@@ -10,9 +10,9 @@ ul {
     --dark-blue: #022C40;
     --text-blue: #105264;
     --light-blue: #1C7585;
-    --custom-white: #EDECEC;
+    --custom-white: #D9D9D9;
     --green: #46D39A;
-
+    --gray: #5F5C6B;
 }
 
 ::-webkit-scrollbar {
@@ -55,6 +55,14 @@ nav {
     color: var(--green);
 }
 
+.text-gray {
+    color: var(--gray);
+}
+
+.text-dark-blue {
+    color: var(--dark-blue);
+}
+
 .bg-mauro {
     background-image: url("https://landing-vendas.s3.amazonaws.com/bg-header.png");
     background-repeat: no-repeat;
@@ -71,10 +79,6 @@ nav {
     background-image: url("https://landing-vendas.s3.amazonaws.com/iphone.png");
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.bg-dark-blue {
-    
 }
 
 .bg-city {
@@ -128,6 +132,10 @@ nav {
 }
 
 .bg-satisfaction {
+    background-color: var(--custom-white);
+}
+
+.bg-gray {
     background-color: var(--custom-white);
 }
 
@@ -197,52 +205,54 @@ nav {
     background-size: cover;
 }
 
-.bg-modules:nth-child(1) {
+.bg-modules-1 {
     border-radius: 50px !important;
-    max-width: 400px;
-    height: 600px;
+    max-width: 300px;
+    height: 500px;
     background: url("https://landing-vendas.s3.amazonaws.com/landing-fria/module1.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.bg-modules:nth-child(2) {
+.bg-modules-2 {
     border-radius: 50px !important;
-    max-width: 400px;
-    height: 600px;
+    max-width: 300px;
+    height: 500px;
     background: url("https://landing-vendas.s3.amazonaws.com/landing-fria/module2.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.bg-modules:nth-child(3) {
+.bg-modules-3 {
     border-radius: 50px !important;
-    max-width: 400px;
-    height: 600px;
+    max-width: 300px;
+    height: 500px;
     background: url("https://landing-vendas.s3.amazonaws.com/landing-fria/module3.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.bg-modules:nth-child(4) {
+.bg-modules-4 {
     border-radius: 50px !important;
-    max-width: 400px;
-    height: 600px;
+    max-width: 300px;
+    height: 500px;
     background: url("https://landing-vendas.s3.amazonaws.com/landing-fria/module4.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
+
+
 .bg-rocket2 {
-    background-color: var(--custom-white) ;
+    background-color: var(--custom-white);
     background-image: url("https://landing-vendas.s3.amazonaws.com/landing-fria/rocket2.png");
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: 70% ;
+    background-position-y: 70%;
     background-size: 40%;
 }
 
@@ -305,13 +315,19 @@ nav {
     height: 40px;
 }
 
+.feedback-cards {
+    border-end-end-radius: 30px;
+    border-start-start-radius: 30px;
+    max-width: 300px;
+}
+
 .btn-green {
     background-color: var(--green);
     box-shadow: 1px 1px 5px 0 rgba(255, 255, 255, 0.8),
         -1px -1px 5px 0 rgba(255, 255, 255, 0.8);
 }
 
-.cards{
+.cards {
     height: 180px;
 }
 
@@ -354,10 +370,11 @@ nav {
     border-top-right-radius: 30px;
 }
 
-.bg-ny {
-    background-image: url("https://landing-vendas.s3.amazonaws.com/ny.png");
+.bg-subscribe {
+    background-image: url("https://landing-vendas.s3.amazonaws.com/landing-fria/subscribe.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 90%;
+    background-position: center;
 }
 
 .bg-ny::before {
@@ -399,20 +416,6 @@ nav {
     color: var(--green) !important;
 }
 
-.mobile {
-    display: none !important;
-}
-
-.mobile-img {
-    cursor: pointer;
-}
-
-.module-1,
-.module-2,
-.module-3 {
-    animation-duration: 1.5s;
-    animation-name: invisible;
-}
 
 .reveal {
     transform: translateX(100px);
@@ -455,6 +458,24 @@ nav {
     z-index: 100 !important;
 }
 
+.font-small {
+    font-size: 12px;
+}
+
+.mt-m2 {
+    margin-top: -12px;
+}
+
+.line-after::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background-color: var(--light-blue);
+    height: 1px;
+    bottom: -20px;
+    left: 0;
+}
+
 @keyframes increase-height {
 
     100% {
@@ -473,47 +494,9 @@ nav {
 }
 
 @media (max-width: 992px) {
-    .mt-m50 {
-        margin-top: 0 !important;
-    }
 
     .bg-faq {
         background: none !important;
-    }
-
-    .module-1,
-    .module-2,
-    .module-3 {
-        display: none !important;
-    }
-
-    .desktop-img {
-        display: none !important;
-    }
-
-    .mobile {
-        display: flex !important;
-        justify-content: center;
-    }
-
-    .resumo-pratico {
-        font-size: 26px !important;
-    }
-
-    .bg-iphone {
-        margin-top: -130px !important;
-    }
-
-    .module {
-        max-height: 80px;
-    }
-
-    .onevalue2 {
-        margin-top: -20px !important;
-    }
-
-    .faq-title {
-        margin-left: 10px;
     }
 
     .faq-subtitle {
@@ -527,8 +510,39 @@ nav {
     ul {
         padding: 0 !important;
     }
+}
 
-    .faq {
-        text-align: start !important;
+@media (max-width: 500px) {
+
+    .text-sm-center {
+        text-align: center !important;
+    }
+
+    .app-title,
+    .app-title+p {
+        text-align: center !important;
+    }
+
+    .bg-app {
+        background-color: var(--custom-white) !important;
+        background: none;
+    }
+
+    .bg-app p {
+        color: var(--dark-blue) !important;
+    }
+
+    .img-notebook {
+        display: none;
+    }
+
+    .mobile {
+        display: none !important;
+    }
+}
+
+@media (min-width: 501px) {
+    .desktop {
+        display: none !important;
     }
 }
