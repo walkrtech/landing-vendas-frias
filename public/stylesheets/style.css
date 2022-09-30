@@ -203,10 +203,12 @@ nav {
 }
 
 .bg-app {
-    background-image: url("https://landing-vendas.s3.amazonaws.com/landing-fria/APP-WALKR.jpg");
+    background: url('https://landing-vendas.s3.amazonaws.com/landing-fria/phone2.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: var(--custom-white) !important;
+    animation: change-bg 5s ease infinite;
 }
 
 .bg-modules-1 {
@@ -490,6 +492,16 @@ nav {
     max-width: 800px;
 }
 
+@keyframes change-bg {
+    0%,100% {
+        background-image: url('https://landing-vendas.s3.amazonaws.com/landing-fria/phone2.jpg');
+    }
+
+    70% {
+        background-image: url('https://landing-vendas.s3.amazonaws.com/landing-fria/phone1.jpg');
+    }
+}
+
 @keyframes increase-height {
 
     100% {
@@ -564,11 +576,6 @@ nav {
     .app-title,
     .app-title+p {
         text-align: center !important;
-    }
-
-    .bg-app {
-        background-color: var(--custom-white) !important;
-        background: none;
     }
 
     .bg-app p {
