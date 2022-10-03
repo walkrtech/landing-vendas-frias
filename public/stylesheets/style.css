@@ -492,6 +492,7 @@ nav {
     max-width: 800px;
 }
 
+
 @keyframes change-bg {
     0%,100% {
         background-image: url('https://landing-vendas.s3.amazonaws.com/landing-fria/phone2.jpg');
@@ -562,6 +563,7 @@ nav {
         max-width: 100px !important;
         max-height: 400px !important;
         margin-bottom: 20px;
+        margin-left: 0 !important;
     }
 
     nav a {
@@ -594,5 +596,9 @@ nav {
 @media (min-width: 501px) {
     .desktop {
         display: none !important;
+    }
+
+    .h-md-150 {
+        height: 150px !important;
     }
 }
