@@ -541,6 +541,10 @@ nav {
 
 @media (max-width: 500px) {
 
+    .bg-app {
+        background-image: none !important;
+    }
+
     .text-mobile {
         font-size: 12px !important;
         letter-spacing: 0 !important;
