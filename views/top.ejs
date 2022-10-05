@@ -23,14 +23,11 @@
             (mesmo sem entenderem de investimento) eu quero te mostrar...
         </p>
 
-        <div id="vid_633512e675d3ff00082233ec"
-            style="position:relative;">
-            <img id="thumb_633512e675d3ff00082233ec"
-                src="https://images.converteai.net/a4fd98fe-8ae0-4b28-9261-149ffbc79d35/players/633512e675d3ff00082233ec/thumbnail.jpg"
-                style="position:absolute;z-index: 2 !important;top:0;left:0;object-fit:cover;display:block;">
-            <div id="backdrop_633512e675d3ff00082233ec"
-                style="position:absolute;top:0; z-index: 2 !important;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);">
-            </div>
+        <div class="video p-5">
+            <button class="btn-video" onclick="videoStatus()" id="btn-video"><img id="image-button" width="50" src="https://landing-vendas.s3.amazonaws.com/landing-fria/icons/play.svg" alt=""></button>
+            <video class="mh-100 mw-100" id="video" src="https://landing-vendas.s3.amazonaws.com/landing-fria/Boas+vindas.mp4">
+            </video>
+            <button  class="btn-restart" onclick="restartVideo()" id="btn-restart">ASSISTIR NOVAMENTE?</button>
         </div>
 
         <a class="subtitle-mobile fs-2 btn btn-green text-white rounded fw-bold ps-4 pe-4 pt-2 pb-2 mt-5"
