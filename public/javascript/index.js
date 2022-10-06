@@ -2,6 +2,7 @@ const video = document.getElementById('video');
 
 const btn = document.getElementById('btn-video');
 const btnRestart = document.getElementById('btn-restart');
+const btnSound = document.getElementById('btn-sound');
 
 const imageButton = document.getElementById('image-button');
 
@@ -64,6 +65,21 @@ function videoStatus() {
         document.documentElement.style.setProperty('--animation-status', "paused");
     }
 }
+
+function videoMute() {
+    if(video.muted){
+        video.muted = false
+        btnSound.setAttribute('src', 'https://landing-vendas.s3.amazonaws.com/icons/Sound.svg')
+    } else {
+        video.muted = true
+        btnSound.setAttribute('src', 'https://landing-vendas.s3.amazonaws.com/icons/Mute.svg')
+    }
+}
+
+function videoFullscreen() {
+    video.webkitRequestFullScreen();
+}
+
 
 function restartVideo() {
     video.load()

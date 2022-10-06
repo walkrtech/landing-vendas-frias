@@ -523,6 +523,36 @@ nav {
     transition: .4s ease;
 }
 
+.video .btn-sound {
+    position: absolute;
+    z-index: 6;
+    bottom: 60px;
+    cursor: pointer;
+    right: 90px;
+    background-color: transparent;
+    border-radius: 50%;
+    opacity: var(--opacity);
+    font-weight: bold;
+    border: none;
+    color: var(--green);
+    transition: .4s ease;
+}
+
+.video .btn-fullscreen {
+    position: absolute;
+    z-index: 6;
+    bottom: 60px;
+    cursor: pointer;
+    right: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    opacity: var(--opacity);
+    font-weight: bold;
+    border: none;
+    color: var(--green);
+    transition: .4s ease;
+}
+
 .video .btn-video:focus,
 .video .btn-video:focus-visible,
 .video .btn-video:active {
@@ -572,6 +602,7 @@ nav {
 .video video {
     pointer-events: none;
     position: relative;
+    box-shadow: 0 0 30px 0 rgb(255 255 255 / 20%);
 }
 
 @keyframes loading {
