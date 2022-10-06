@@ -633,6 +633,10 @@ nav {
 
 @media (max-width: 500px) {
 
+    .video {
+        padding: 0 !important;
+    }
+
     .bg-app {
         background-image: none !important;
     }

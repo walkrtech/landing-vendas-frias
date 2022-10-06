@@ -24,10 +24,13 @@
         </p>
 
         <div class="video p-5">
-            <button class="btn-video" onclick="videoStatus()" id="btn-video"><img id="image-button" width="50" src="https://landing-vendas.s3.amazonaws.com/landing-fria/icons/play.svg" alt=""></button>
-            <video class="mh-100 mw-100" id="video" src="https://landing-vendas.s3.amazonaws.com/landing-fria/Boas+vindas.mp4">
+            <button class="btn-video" onclick="videoStatus()" id="btn-video"><img id="image-button" width="50"
+                    src="https://landing-vendas.s3.amazonaws.com/landing-fria/icons/play.svg" alt=""></button>
+            <video playsInline poster="https://landing-vendas.s3.amazonaws.com/landing-fria/thumb-video.png" class="mh-100 mw-100"
+                id="video">
+                <source src="https://landing-vendas.s3.amazonaws.com/landing-fria/Boas+vindas.mp4">
             </video>
-            <button  class="btn-restart" onclick="restartVideo()" id="btn-restart">ASSISTIR NOVAMENTE?</button>
+            <button class="btn-restart" onclick="restartVideo()" id="btn-restart">ASSISTIR NOVAMENTE?</button>
         </div>
 
         <a class="subtitle-mobile fs-2 btn btn-green text-white rounded fw-bold ps-4 pe-4 pt-2 pb-2 mt-5"
