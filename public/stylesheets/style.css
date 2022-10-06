@@ -16,6 +16,7 @@ ul {
     --width: 0%;
     --animation-status: paused;
     --video-duration: 0;
+    --opacity: 1;
 }
 
 html {
@@ -515,10 +516,10 @@ nav {
     padding: 15px;
     border-radius: 50%;
     font-size: 20px;
+    opacity: var(--opacity);
     font-weight: bold;
     border: 4px solid var(--green);
     color: var(--green);
-    opacity: 0;
     transition: .4s ease;
 }
 

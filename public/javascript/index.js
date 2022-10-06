@@ -5,7 +5,7 @@ const btnRestart = document.getElementById('btn-restart');
 
 const imageButton = document.getElementById('image-button');
 
-let width = 0;
+let aux = 0;
 
 window.addEventListener('scroll', () => {
     document.querySelectorAll('.reveal').forEach(reveal => {
@@ -51,9 +51,12 @@ function videoStatus() {
     if (video.paused) {
         video.play();
         imageButton.src = 'https://landing-vendas.s3.amazonaws.com/landing-fria/icons/pause.svg'
-        if (width == 0) {
-            document.documentElement.style.setProperty('--animation-status', "running");
-            document.documentElement.style.setProperty('--video-duration', duration + 's');
+        document.documentElement.style.setProperty('--animation-status', "running");
+        document.documentElement.style.setProperty('--video-duration', duration + 's');
+
+        if (aux == 0) {
+            document.documentElement.style.setProperty('--opacity', 0);
+            aux++;
         }
     } else {
         video.pause();
